@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/*/////////////// font ////////////////*/
+pre {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  /* Neutral / Gray 800 */
+
+  color: #1e293b;
+}
+
+/*/////////////// elements ////////////////*/
+
+ul {
+  list-style: none;
+}
+select {
+  height: 100%;
+  border-style: none;
+}
+body {
+  background: #f8fafc;
+}
+
+.main__container {
+  width: 100%;
+}
+
+/*/////////////// header ////////////////*/
+
+nav {
+  width: 375px;
+}
+.align__flex {
+  display: flex;
+  align-items: center;
+}
+
+.header__main {
+  padding-left: 32px;
+  padding-right: 32px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.logo {
+  margin-right: 24px;
+}
+.searchbar {
+  /* margin-left: 24px;
+  margin-right: 24px; */
+  width: 100%;
+  background-color: #f1f5f9;
+}
+#search__input {
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+}
+.nav__lists {
+  margin-left: 24px;
+  padding: 4;
+}
+.use__case {
+  white-space: nowrap;
+}
+.nav__btn:not(:last-child) {
+  margin-right: 16px;
+}
+
+.submit__btn {
+  margin: 2px 24px 2px 24px;
+  padding: 8px 12px 8px 12px;
+  white-space: nowrap;
+  border-style: none;
+  background-color: #102fd8;
+  border-radius: 5px;
+  color: #f1f5f9;
+}
+
+/*/////////////// hero ////////////////*/
+.hero {
+  width: 100%;
+  height: 100vh; /*크기를 어떻게 해야하는 지 고민*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #747070;
+}
+.hero__text__box {
+  width: 676px;
+  height: 218px;
+}
+
+.tag__lists {
+  margin-top: 24px;
+  padding: 4px;
+  display: flex;
+}
+.hero__searchbar {
+  height: 44px;
+}
+
+.tag__item {
+  margin-right: 10px;
+  padding: 4px 12px 4px 12px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+/*font*/
+.hero__title {
+  /* Heading/H1/Bold */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+
+  /* Shades/White */
+
+  color: #ffffff;
+}
+.hero__sub-title {
+  margin: 16px 0 16px 0;
+  /* Paragraph/P1 / Regular */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  /* Shades/White */
+
+  color: #ffffff;
+}
+
+/*/////////////// main page ////////////////
+David DeSandro @ https://masonry.desandro.com*/
+
+/* Step 2: center things inside the grid and clear some space around it by setting a device based max-width and margin*/
+.main__page {
+  margin: 60px 22px 0 22px;
+}
+img {
+  width: 100%;
+}
+.grid {
+  max-width: 100%;
+  margin: auto;
+}
+.center__text__align {
+  text-align: center;
+}
+
+/* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
+
+.grid-item {
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline;
+}
+
+/* Step 4: Add media queries (subjective) to make the whole grid resposive. */
+
+@media (min-width: 500px) {
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .grid-item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .grid-item {
+    width: 20%;
+  }
+}
+/*/////////////// learn more box ////////////////*/
+.learn__more__box {
+  height: 220px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.learn__more__btn {
+  padding: 12px 18px;
+  width: 265px;
+  height: 48px;
+  border-style: none;
+  background: #102fd8;
+  border-radius: 5px;
+  /*font*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Neutral / Gray 50 */
+
+  color: #f8fafc;
+}
+
+/*font*/
+.learn__more__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 28px;
+}
+.learn__more__text {
+  /* Paragraph / P2 / Regular */
+
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Neutral / Gray 500 */
+
+  color: #64748b;
+}
+
+/*/////////////// page pade out ////////////////*/
+.boxing__fix {
+  width: 100%;
+  height: 0;
+}
+.fade__out {
+  position: relative;
+  height: 440px;
+  padding-bottom: 56px;
+  background: linear-gradient(
+    180deg,
+    rgba(248, 250, 252, 0) 0%,
+    rgba(248, 250, 252, 0.95) 32.8%,
+    #f8fafc 74.09%
+  );
+  transform: translateY(-440px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.fadeout__text__box {
+  width: 677px;
+  height: 132px;
+}
+.page__searchbar {
+  margin-top: 24px;
+  height: 74px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/*font*/
+.page__text__title {
+  /* Heading/H4 / Bold */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+/*/////////////// popular areas ////////////////*/
+.popular__article {
+  padding: 64px 32px 64px 32px;
+  max-width: 100%;
+}
+.popular__article__title {
+  margin-bottom: 40px;
+}
+
+/*/////////////// footer ////////////////*/
+.thema__dark > .footer__title > pre,
+.thema__dark > * > * > .logo__title,
+.thema__dark > * > p,
+.thema__dark > * > * > * > p {
+  color: #fff;
+}
+.footer {
+  background-color: #1c212e;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.footer__box {
+  padding: 64px 32px 24px 32px;
+}
+.footer__contact {
+  display: flex;
+  justify-content: right;
+}
+
+.copy__right__footer {
+  padding: 25px 32px 25px 32px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  background-color: #131825;
+}
+.copy__right__footer > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}

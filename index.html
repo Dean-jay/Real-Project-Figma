@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>FlowUP your Design</title>
+    <!-- Made possible by the great work of David DeSandro @ https://masonry.desandro.com -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- <script defer src="./src/mainPage.js"></script> -->
+    <!-- David DeSandro @ https://masonry.desandro.com -->
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <contianer class="main__container">
+      <!-------header start------->
+      <header class="header__main align__flex">
+        <!-------logo------->
+        <logo class="logo">
+          <h2>BlueStock</h2>
+        </logo>
+
+        <!-------searchbar------->
+        <div class="searchbar align__flex">
+          <select>
+            <option value="0">All</option>
+            <option value="1">All</option>
+            <option value="2">All</option>
+            <option value="3">All</option>
+            <option value="4">All</option>
+          </select>
+          <input
+            id="search__input"
+            type="text"
+            placeholder="Search a location"
+          />
+          <span class="material-icons search__icon">&#xe8b6;</span>
+        </div>
+
+        <!-------navigation------->
+        <nav class="nav align__flex">
+          <ul class="nav__lists align__flex">
+            <li class="nav__btn"><div class="use__case">Use Cases</div></li>
+            <li class="nav__btn"><div class="about">About</div></li>
+            <li class="nav__btn"><div class="blog">Blog</div></li>
+          </ul>
+
+          <!-------navigation / submit button------->
+          <button class="submit__btn">+ Submit</button>
+
+          <!-------navigation / my detail------->
+          <div class="my__detail align__flex">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background-color: #212121;
+                padding: 5;
+                border-radius: 20px;
+                color: #fff;
+              "
+            >
+              IMG
+            </div>
+            <div class="detail__folded">
+              ⬇
+              <ul class="folded__detail__lists"></ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-------header end------->
+
+      <!-------hero start------->
+      <section class="hero">
+        <div class="hero__text__box">
+          <h3 class="hero__title">
+            Beautiful aerial stock<br />photography and video
+          </h3>
+          <p class="hero__sub-title">
+            Royalty free photos and videos sorted by geographic location.
+          </p>
+
+          <!-------hero / searchbar------->
+          <div class="searchbar align__flex hero_searchbar">
+            <select>
+              <option value="0">All</option>
+              <option value="1">All</option>
+              <option value="2">All</option>
+              <option value="3">All</option>
+              <option value="4">All</option>
+            </select>
+            <input
+              id="search__input"
+              type="text"
+              placeholder="Search a location"
+            />
+            <span class="material-icons search__icon">&#xe8b6;</span>
+          </div>
+
+          <!-------hero / tag box------->
+          <div class="tag__box">
+            <ul class="tag__lists">
+              <li class="tag__item">
+                <div class="place__tag">
+                  <p class="place__tag__text">Sydney</p>
+                </div>
+              </li>
+              <li class="tag__item">
+                <div class="place__tag">
+                  <p class="place__tag__text">Brisbane</p>
+                </div>
+              </li>
+              <li class="tag__item">
+                <div class="place__tag">
+                  <p class="place__tag__text">Melbourne</p>
+                </div>
+              </li>
+              <li class="tag__item">
+                <div class="place__tag">
+                  <p class="place__tag__text">Adelaide</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-------hero end------->
+
+      <!-------main page start------->
+      <section class="main__page">
+        <!-------main page / learn more box------->
+        <!-- Step 1: Start with a the main grid wrapper-->
+        <div class="grid center__text__align">
+          <!-- Step 2: Add grid items--->
+          <div class="grid-item">
+            <!--------learn more box------->
+            <div class="learn__more__box">
+              <h4 class="learn__more__title">Want to submit photo?</h4>
+              <p class="learn__more__text">
+                We are always looking for talented photographers to join us.
+              </p>
+              <button class="learn__more__btn">Learn More</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/600" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/400" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/600" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/300" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/600" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/400" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/600" alt="" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/300" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="https://picsum.photos/300/600" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-------pade out of page------->
+      <div class="boxing__fix">
+        <div class="fade__out">
+          <div class="fadeout__text__box">
+            <h4 class="page__text__title">
+              Looking for more something specific?
+            </h4>
+            <!-------page / searchbar------->
+            <div class="searchbar align__flex page__searchbar">
+              <select>
+                <option value="0">All</option>
+                <option value="1">All</option>
+                <option value="2">All</option>
+                <option value="3">All</option>
+                <option value="4">All</option>
+              </select>
+              <input
+                id="search__input"
+                type="text"
+                placeholder="Search a location"
+              />
+              <span class="material-icons search__icon">&#xe8b6;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-------Popular areas page------->
+      <section class="popular__article">
+        <h2 class="popular__article__title">Popular areas</h2>
+        <div class="footer__grid popular__article__lists">
+          <div class="left__text">
+            <pre class="text__title">Sydney</pre>
+            <ul class="text__items left__flex">
+              <li class="text__item">
+                <p class="popular__text">Sydney Opera House photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Harbour Bridge photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Sydney Harbour photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Carins photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Brisbane City photos</p>
+              </li>
+            </ul>
+          </div>
+          <div class="left__text">
+            <pre class="text__title">Sydney</pre>
+            <ul class="text__items left__flex">
+              <li class="text__item">
+                <p class="popular__text">Sydney Opera House photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Harbour Bridge photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Sydney Harbour photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Carins photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Brisbane City photos</p>
+              </li>
+            </ul>
+          </div>
+          <div class="left__text">
+            <pre class="text__title">Melbourne</pre>
+            <ul class="text__items left__flex">
+              <li class="text__item">
+                <p class="popular__text">Sydney Opera House photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Harbour Bridge photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Sydney Harbour photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Carins photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Brisbane City photos</p>
+              </li>
+            </ul>
+          </div>
+          <div class="left__text">
+            <pre class="text__title">Melbourne</pre>
+            <ul class="text__items left__flex">
+              <li class="text__item">
+                <p class="popular__text">Sydney Opera House photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Harbour Bridge photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Sydney Harbour photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Carins photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Brisbane City photos</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-------main page end------->
+
+      <!-------footer start------->
+      <footer class="footer">
+        <div class="footer__grid footer__box thema__dark">
+          <div class="footer__logo">
+            <logo class="logo">
+              <h2 class="logo__title">BlueStock</h2>
+            </logo>
+            <p>Beautiful photos and videos sorted by geographic location.</p>
+          </div>
+          <div class="footer__title footer__company">
+            <pre>Company</pre>
+            <ul class="text__items left__flex">
+              <li class="text__item">
+                <p class="popular__text">Sydney Opera House photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Harbour Bridge photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Sydney Harbour photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Carins photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Brisbane City photos</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__title footer__popular__categories">
+            <pre>Popular categories</pre>
+            <ul class="text__items left__flex">
+              <li class="text__item">
+                <p class="popular__text">Sydney Opera House photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Harbour Bridge photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Sydney Harbour photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Carins photos</p>
+              </li>
+              <li class="text__item">
+                <p class="popular__text">Brisbane City photos</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__title footer__contact">
+            <pre>Connect with us</pre>
+          </div>
+        </div>
+
+        <!-------footer copy right------->
+        <div class="copy__right__footer thema__dark">
+          <p>Copyright 2021-BlueStock</p>
+          <p>Specific moments captured.</p>
+        </div>
+      </footer>
+    </contianer>
+    <script>
+      $('.grid').imagesLoaded(function () {
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+        });
+      });
+    </script>
+  </body>
+</html>
